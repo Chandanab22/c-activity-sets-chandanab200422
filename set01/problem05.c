@@ -18,17 +18,17 @@ int input(){
   scanf("%d",&x);
   return(x);
   }
-int compare(int a, int b , int c){
-  if(a>b){
-  {
-  else 
-  {
-    if(b>c){return(b);}
-    else{return (c);}
-    }
+int compare(int a, int b , int c)
+{
+  if( a>=b && a>=c)
+    return a;
+  if( b>=c )
+    return b;
+  return c;
   }
+     
 void output(int a, int b, int c, int largest){
-  printf("the largest of %d, %d and %d is %d" a,b,c largest);
+  printf("the largest of %d,%d and %d is %d" ,a,b,c,largest);
 }
 
 
