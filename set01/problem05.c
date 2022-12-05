@@ -10,23 +10,24 @@ b = input();
 c = input();
 l = compare(a,b,c);
 output(a,b,c,l);
+  return 0;
 }
 
 int input(){
   int x;
   printf("enter a number\n");
-  scanf("%d",&x);
+ if(scanf("%d",&x)!=1);
   return(x);
   }
 int compare(int a, int b , int c)
 {
-  if( a>=b && a>=c)
-    return a;
-  if( b>=c )
-    return b;
-  return c;
-  }
-     
+  if( a>=b && a>=c)     //if((a>b)&&(a>c))
+    return a;              //largest=a;
+  if( b>=c )            //if((b>a)&&(b>c))
+    return b;             //largedt=b;
+  return c;             //if((c>a)&&(c>b)) 
+  }                      //return c;
+                        // return largest;
 void output(int a, int b, int c, int largest){
   printf("the largest of %d,%d and %d is %d" ,a,b,c,largest);
 }
