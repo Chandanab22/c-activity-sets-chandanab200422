@@ -14,13 +14,23 @@ int input_n(){
   int x;
   printf("Enter the number\n");
   scanf("%d", &x);
-  return(x);
+  return x;
 }
 
 int sum_n_nos(int n){
-  n = (n*(n+1))/2;
-  return(n);
+  int sum = 0;
+  for(i = 1; i<=n; i++)
+  {
+  sum = sum + i;
+  }
+return sum;
 }
-void output(int n, int sum){
-  printf("the sum of %d natural number is %d",n,sum);
+void output(int n, int sum)
+{
+   int i;
+   for(i = 1; i<=n-1; i++){
+     print("%d + ", i);
+}
+  
+  printf("%d = %d",n,sum);
 }
