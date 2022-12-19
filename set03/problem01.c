@@ -1,22 +1,23 @@
-
 #include <stdio.h>
+#include <string.h>
 
-void print_nos(int x, int y);
-void print_nos_again(int x, int y);
 
-int main()
+void input_two_strings(char *string1, char *string2);
+
 {
-    int x=8;y=9;
-    print_nos(x,y);
-    return 0;
+  printf("Enter the two string ");
+  scanf("%s%s", s1,s2);
 }
 
-void print_nos(int x, int y)
+void output(char *s1, char *s2); 
+/* print both the string */
 {
-      print_nos_again(x,y);
+  int i;
+  for(i=0;i<a;i++)
+}
+{
+  printf("enter two strings")
+    scanf(")
 }
 
-void print_nos_again(int x , int y)
-{
-    printf("x is %d and y is %d", x,y);
-}
+  

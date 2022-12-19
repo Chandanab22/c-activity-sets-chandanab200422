@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
- 
-char* copyString(char s[])
-{
-    char* s2;
-    s2 = (char*)malloc(20);
- 
-    strcpy(s2, s);
-    return (char*)s2;
+#include <math.h>
+struct camel {
+	float radius, height, length,weight;
+};
+int main(){
+ camel c;
+  printf("enter the radius, height, length\n");
+  scanf("%f%f%f", &c.radius, &c.height, &c.lenght);
+  return(c);
+  }
+
+void find_weight(camel *c){
+    c->weight
 }
 
-int main()
-{
-    char s1[20] = "GeeksforGeeks";
-    char* s2;
-    s2 = copyString(s1);
-    printf("%s", s2);
-    return 0;
-}
+typedef struct camel Camel;
+
+Camel input();
+float find_weight(Camel c); 
