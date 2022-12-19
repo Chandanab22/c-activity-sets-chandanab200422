@@ -11,7 +11,7 @@ int main(){
   }
 
 void find_weight(camel *c){
-    c->weight
+    c->weight = 3.14 * c->radius * c->radius *
 }
 
 typedef struct camel Camel;
